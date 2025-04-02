@@ -1,0 +1,289 @@
+/* Réinitialisation des marges par défaut du body et définition de la police de base */
+body {
+    margin: 0; /* Enlève la marge par défaut autour du body */
+    font-family: Arial, sans-serif; /* Définit la police du texte */
+    line-height: 1.6; /* Espace les lignes de texte pour une meilleure lisibilité */
+}
+
+/* Style pour la barre de navigation dans l'en-tête */
+header nav {
+    display: flex; /* Utilise le modèle Flexbox pour le layout */
+    justify-content: space-between; /* Espace les éléments pour qu'ils soient répartis uniformément */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+    background-color: #FFFFFF; /* Couleur de fond blanche */
+    padding: 5px 10px; /* Ajoute de l'espace autour du contenu */
+    position: fixed; /* Fixe la barre de navigation en haut de la page */
+    width: 100%; /* La barre de navigation occupe toute la largeur de l'écran */
+    top: 0; /* Fixe la barre en haut de la page */
+    z-index: 1000; /* Assure que la barre est au-dessus des autres éléments */
+}
+
+/* Style pour le logo dans la barre de navigation */
+.logo {
+    width: 100px; /* Largeur fixe pour le logo */
+    height: auto; /* La hauteur s'ajuste automatiquement pour garder les proportions */
+}
+
+/* Style pour la liste des liens de navigation */
+.nav-links {
+    display: flex; /* Utilise Flexbox pour les éléments de la liste */
+    list-style: none; /* Enlève les puces par défaut des éléments de la liste */
+    margin: 0; /* Enlève la marge par défaut */
+    padding: 0; /* Enlève le padding par défaut */
+}
+
+/* Style pour chaque élément de la liste de navigation */
+.nav-links li {
+    margin: 0 20px; /* Ajoute de l'espace à gauche et à droite des éléments de la liste */
+}
+
+/* Style pour les liens de navigation */
+.nav-links a {
+    color: rgb(73, 208, 188); /* Couleur du texte des liens */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    font-weight: bold; /* Met le texte des liens en gras */
+    transition: color 0.5s; /* Ajoute une transition douce pour les changements de couleur */
+}
+
+/* Style au survol des liens de navigation */
+.nav-links a:hover {
+    color: #000000; /* Change la couleur du texte au survol */
+}
+
+/* Style pour les icônes des réseaux sociaux */
+.social-icons {
+    display: flex; /* Utilise Flexbox pour le layout des icônes */
+}
+
+/* Style pour les images des icônes des réseaux sociaux */
+.social-icons img {
+    width: 40px; /* Largeur fixe pour les icônes */
+    height: 30px; /* Hauteur fixe pour les icônes */
+    margin-right: 15px; /* Ajoute de l'espace à droite des icônes */
+}
+
+/* Style pour la section principale avec la classe "amine" */
+.amine {
+    padding-top: 80px; /* Ajoute de l'espace en haut pour compenser la barre de navigation fixe */
+    text-align: center; /* Centre le texte à l'intérieur de cette section */
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Ajoute de l'espace autour du contenu */
+    margin-top: 50px; /* Ajoute de l'espace au-dessus de la section */
+}
+
+/* Style pour les titres principaux dans la section principale */
+main h1 {
+    color: rgb(0, 213, 255); /* Couleur spécifique pour les titres h1 */
+}
+
+/* Style pour les titres secondaires dans la section principale */
+main h2 {
+    color: #fabea7; /* Couleur spécifique pour les titres h2 */
+}
+
+/* Style pour la section principale */
+main {
+    padding-top: 120px; /* Ajoute de l'espace en haut */
+    text-align: center; /* Centre le texte */
+}
+
+/* Style pour les sous-titres h3 */
+h3 {
+    color: #ffffff; /* Couleur du texte pour les h3 */
+}
+
+/* Style pour la galerie d'images flexibles */
+.flex-images {
+    display: flex; /* Utilise Flexbox pour le layout des images */
+    justify-content: space-around; /* Répartit les images uniformément */
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne suivante si nécessaire */
+    margin: 20px 0; /* Ajoute de l'espace au-dessus et en-dessous */
+    margin-top: 100px; /* Ajoute plus d'espace au-dessus */
+}
+
+/* Style pour les images dans la galerie flexible */
+.flex-images img {
+    width: 30%; /* Définit la largeur des images à 30% de l'espace disponible */
+    max-width: 250px; /* Limite la largeur maximale des images à 250px */
+    margin-bottom: 20px; /* Ajoute de l'espace en dessous des images */
+}
+
+/* Style au survol des images dans la galerie flexible */
+.flex-images img:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+}
+
+/* Style pour les images en grille */
+.grid-images {
+    display: grid; /* Utilise le modèle Grid pour le layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crée des colonnes adaptatives */
+    gap: 50px; /* Ajoute de l'espace entre les images */
+    margin: 50px 0; /* Ajoute de l'espace au-dessus et en-dessous */
+    margin-top: 100px; /* Ajoute plus d'espace au-dessus */
+    margin-left: auto; /* Centre la grille horizontalement */
+    margin-right: auto; /* Centre la grille horizontalement */
+}
+
+/* Style pour les images dans la grille */
+.grid-images img {
+    width: 60%; /* Définit la largeur des images à 60% de l'espace disponible */
+    margin-left: auto; /* Centre les images horizontalement */
+    margin-right: auto; /* Centre les images horizontalement */
+}
+
+/* Style au survol des images dans la grille */
+.grid-images img:hover {
+    transform: scale(1.3); /* Agrandit les images au survol */
+}
+
+/* Style pour une autre grille d'images avec une classe différente */
+.grid-images-alt {
+    display: grid; /* Utilise le modèle Grid pour le layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crée des colonnes adaptatives */
+    gap: 50px; /* Ajoute de l'espace entre les images */
+    margin: 50px 0; /* Ajoute de l'espace au-dessus et en-dessous */
+    margin-top: 100px; /* Ajoute plus d'espace au-dessus */
+    margin-left: auto; /* Centre la grille horizontalement */
+    margin-right: auto; /* Centre la grille horizontalement */
+}
+
+/* Style pour les images dans la grille alternative */
+.grid-images-alt img {
+    width: 60%; /* Définit la largeur des images à 60% de l'espace disponible */
+    margin-left: auto; /* Centre les images horizontalement */
+    margin-right: auto; /* Centre les images horizontalement */
+}
+
+/* Style au survol des images dans la grille alternative */
+.grid-images-alt img:hover {
+    transform: scale(1.3); /* Agrandit les images au survol */
+}
+
+/* Style pour les formulaires */
+form {
+    display: flex; /* Utilise Flexbox pour le layout du formulaire */
+    flex-direction: column; /* Dispose les éléments du formulaire en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    margin: 20px 0; /* Ajoute de l'espace au-dessus et en-dessous du formulaire */
+}
+
+/* Style pour les labels dans les formulaires */
+form label {
+    margin: 10px 0 5px; /* Ajoute de l'espace autour des labels */
+    font-weight: bold; /* Met le texte des labels en gras */
+}
+
+/* Style pour les champs de texte et les zones de texte dans les formulaires */
+form input,
+form textarea {
+    width: 100%; /* Définit la largeur des champs de texte à 100% de l'espace disponible */
+    max-width: 400px; /* Limite la largeur maximale des champs à 400px */
+    padding: 10px; /* Ajoute de l'espace à l'intérieur des champs */
+    margin-bottom: 20px; /* Ajoute de l'espace en dessous des champs */
+    border: 1px solid #ccc; /* Ajoute une bordure légère autour des champs */
+    border-radius: 5px; /* Arrondit les coins des champs */
+}
+
+/* Style pour les boutons dans les formulaires */
+form button {
+    background-color: #333; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Enlève la bordure par défaut du bouton */
+    padding: 10px 20px; /* Ajoute de l'espace à l'intérieur du bouton */
+    border-radius: 5px; /* Arrondit les coins du bouton */
+    cursor: pointer; /* Change le curseur pour une main pointer au survol */
+    transition: background-color 0.3s; /* Ajoute une transition douce pour les changements de couleur */
+}
+
+/* Style au survol des boutons */
+form button:hover {
+    background-color: #ff6347; /* Change la couleur de fond au survol */
+}
+
+/* Style pour le pied de page */
+footer {
+    background-color: #012d2d; /* Couleur de fond du pied de page */
+    color: white; /* Couleur du texte du pied de page */
+    text-align: center; /* Centre le texte dans le pied de page */
+    padding: 10px 20px; /* Ajoute de l'espace autour du texte */
+    position: fixed; /* Fixe le pied de page en bas de la page */
+    width: 100%; /* Le pied de page occupe toute la largeur de l'écran */
+    bottom: 0; /* Fixe le pied de page en bas */
+    font-size: 10px; /* Réduit la taille de la police */
+    height: 40px; /* Hauteur fixe pour le pied de page */
+}
+
+/* Styles pour les différents modes d'affichage en fonction de la taille de l'écran */
+@media (max-width: 768px) {
+    /* Styles pour les petits écrans (mobiles) */
+    .nav-links {
+        flex-direction: column; /* Dispose les liens en colonne */
+        background-color: #3333333e; /* Couleur de fond semi-transparente */
+        position: absolute; /* Positionne le menu de navigation de manière absolue */
+        top: 60px; /* Positionne le menu sous la barre de navigation */
+        right: 10px; /* Positionne le menu du côté droit */
+        width: 200px; /* Largeur fixe pour le menu de navigation */
+    }
+
+    .nav-links.active {
+        display: flex; /* Affiche le menu lorsque la classe "active" est ajoutée */
+    }
+
+    .flex-images img,
+    .grid-images img,
+    .grid-images-alt img {
+        width: 100%; /* Les images prennent toute la largeur disponible */
+    }
+
+    body {
+        background-color: #ccc; /* Couleur de fond pour les petits écrans */
+    }
+
+    .home-content::before {
+        content: "Mode mobile"; /* Ajoute un texte avant le contenu principal */
+        display: block; /* Affiche le texte comme un bloc */
+        text-align: center; /* Centre le texte */
+        font-size: 20px; /* Taille de la police du texte */
+        color: #ccc; /* Couleur du texte */
+        margin-bottom: 10px; /* Ajoute de l'espace en dessous du texte */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles pour les écrans moyens (tablettes) */
+    body {
+        background-color: #333; /* Couleur de fond pour les tablettes */
+    }
+
+    .home-content::before {
+        content: "Mode tablette"; /* Ajoute un texte avant le contenu principal */
+        display: block; /* Affiche le texte comme un bloc */
+        text-align: center; /* Centre le texte */
+        font-size: 20px; /* Taille de la police du texte */
+        color: #ccc; /* Couleur du texte */
+        margin-bottom: 10px; /* Ajoute de l'espace en dessous du texte */
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Styles pour les grands écrans (ordinateurs de bureau) */
+    body {
+        background-color: #003366; /* Couleur de fond pour les grands écrans */
+    }
+
+    .home-content::before {
+        content: "Mode desktop"; /* Ajoute un texte avant le contenu principal */
+        display: block; /* Affiche le texte comme un bloc */
+        text-align: center; /* Centre le texte */
+        color: #ccc; /* Couleur du texte */
+        font-size: 20px; /* Taille de la police du texte */
+        margin-bottom: 10px; /* Ajoute de l'espace en dessous du texte */
+    }
+}
+
+/* Assure que les images sont bien dimensionnées et ne débordent pas */
+img {
+    max-width: 100%; /* Limite la largeur des images à 100% de leur conteneur */
+    height: auto; /* Ajuste la hauteur automatiquement pour garder les proportions */
+    display: block; /* Affiche les images comme des blocs pour éviter les espaces en dessous */
+}

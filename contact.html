@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet d'ajuster l'affichage sur mobile ou tablette -->
+    <title>Contact</title> <!-- Le titre qui s'affiche dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="style.css"> <!-- On relie le fichier CSS pour le style de la page -->
+</head>
+<body>
+    <header> <!-- Ici, c'est le haut de la page avec le menu et le logo -->
+        <nav> <!-- La barre de navigation -->
+            <a href="index.html"> <!-- Lien pour revenir à la page d'accueil -->
+                <img src="images/logo.png" alt="Logo SS Location" class="logo" width="100" height="100"> <!-- Affiche le logo, il fait 100px de large -->
+            </a>
+            <ul class="nav-links"> <!-- La liste des liens du menu -->
+                <li><a href="index.html">Accueil</a></li> <!-- Lien vers la page d'accueil -->
+                <li><a href="about.html">À propos</a></li> <!-- Lien vers la page À propos -->
+                <li><a href="contact.html">Nous contacter</a></li> <!-- Lien vers la page de contact -->
+            </ul>
+            <div class="social-icons"> <!-- La section pour les icônes de réseaux sociaux -->
+                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a> <!-- Icône Facebook avec un lien -->
+                <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter"></a> <!-- Icône Twitter avec un lien -->
+                <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a> <!-- Icône Instagram avec un lien -->
+            </div>
+        </nav>
+    </header>
+    
+    <main> <!-- Le contenu principal de la page -->
+        <section> <!-- Une section qui contient le formulaire de contact -->
+            <h3>Contactez-nous</h3> <!-- Le titre du formulaire -->
+            
+            <form action="#" method="post"> <!-- Début du formulaire pour contacter -->
+                <label for="name">Nom:</label> <!-- Label pour le nom -->
+                <input type="text" id="name" name="name" required> <!-- Champ pour écrire le nom, obligatoire -->
+                
+                <label for="email">Email:</label> <!-- Label pour l'email -->
+                <input type="email" id="email" name="email" required> <!-- Champ pour entrer l'email, obligatoire aussi -->
+                
+                <label for="message">Message:</label> <!-- Label pour le message -->
+                <textarea id="message" name="message" required></textarea> <!-- Zone de texte pour écrire le message, obligatoire -->
+                
+                <button type="submit">Envoyer</button> <!-- Bouton pour envoyer le formulaire -->
+            </form>
+        </section>
+
+        <section class="amine"> <!-- Une autre section avec des infos sur l'entreprise -->
+            <h2>SS Location</h2> <!-- Nom de l'entreprise -->
+            <div class="custom-heading"> <!-- Un titre personnalisé -->
+                <h3>Montréal</h3> <!-- Ville de l'entreprise -->
+            </div>
+            <address> <!-- Infos de contact -->
+                220 Av Fairmont O. <!-- L'adresse de l'entreprise -->
+                <br />
+                <a href="tel:+15141111111">+1 (514) 111 1111</a> <!-- Lien pour appeler directement l'entreprise -->
+                <br />
+                <a href="mailto:Info@Kadriamine.com">Info@Kadriamine.com</a> <!-- Lien pour envoyer un email -->
+                <p>Sur rendez-vous uniquement</p> <!-- Indication que c'est sur rendez-vous -->
+            </address>
+        </section>
+    </main>
+
+    
+</body>
+<footer> <!-- Le pied de page -->
+    <p>2024 SS Location © est une marque déposée. Toute utilisation non autorisée de cette marque est interdite. Tous droits réservés.</p> <!-- Le texte de copyright en bas de page -->
+</footer>
+</html>
