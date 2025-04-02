@@ -28,14 +28,6 @@ sslocation/
 - CSS3
 - Adobe Illustrator (pour le logo)
 
-## 🖼️ Aperçu visuel
-
-![Home Slide](sslocation/images/home_slide.jpg)
-
-## 🚀 Mise en ligne
-
-Tu peux héberger ce projet via GitHub Pages ou tout autre service d’hébergement web statique.
-
 ## ✨ Auteur
 
 Projet développé par **Amine**, développeur web passionné.
